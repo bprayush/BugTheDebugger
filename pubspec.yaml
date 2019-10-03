@@ -14,7 +14,7 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -74,3 +74,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Mansalva
+      fonts:
+        - asset: assets/fonts/Mansalva/Mansalva-Regular.ttf
+    - family: Turret_Road
+      fonts:
+        - asset: assets/fonts/Turret_Road/TurretRoad-Regular.ttf

@@ -12,9 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BugTheDebugger | ',
+      title: 'BugTheDebugger',
       initialRoute: AppRoutes.COMING_SOON,
       onGenerateRoute: (settings) => AppRouter.generateRoute(settings),
+      theme: ThemeData(
+        fontFamily: 'Mansalva',
+      ),
     );
   }
 }
