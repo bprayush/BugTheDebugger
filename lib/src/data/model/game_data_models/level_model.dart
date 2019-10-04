@@ -8,6 +8,28 @@ abstract class LevelModel extends BaseGameDataModel {
   List<bool> answerState;
   Map<GameState, String> result;
   List<Map<String, dynamic>> dataMap;
+  String output;
+
   void updateValue(int index);
-  String run();
+
+  void run() {
+    int answeredCount = 0;
+    answerState.forEach((f) {
+      if (f) answeredCount++;
+    });
+    if (answeredCount == answerState.length) {
+      updateOutput(result[GameState.Success]);
+      success();
+    } else if (answeredCount == 0) {
+      updateOutput(result[GameState.Execute]);
+      execute();
+    } else {
+      updateOutput(result[GameState.Error]);
+      error();
+    }
+  }
+
+  void updateOutput(String output) {
+    this.output = output;
+  }
 }

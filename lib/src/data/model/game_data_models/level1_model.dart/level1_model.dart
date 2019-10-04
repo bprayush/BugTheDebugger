@@ -13,7 +13,7 @@ class Level1Model extends LevelModel {
   @override
   Map<GameState, String> result = {
     GameState.Error: 'Not quite there yet.',
-    GameState.Success: 'Yep. You\'re good',
+    GameState.Success: 'Awwwww... efff you.',
     GameState.Execute: 'Hello, World!',
   };
   List<Map<String, dynamic>> dataMap;
@@ -63,20 +63,7 @@ class Level1Model extends LevelModel {
         'value': '\n}\n',
       },
     ];
-  }
 
-  @override
-  String run() {
-    int answeredCount = 0;
-    answerState.forEach((f) {
-      if (f) answeredCount++;
-    });
-    if (answeredCount == answerState.length)
-      success();
-    else if (answeredCount == 0)
-      execute();
-    else
-      error();
-    return result[gameState];
+    notifyListeners();
   }
 }

@@ -57,7 +57,6 @@ class _LevelsState extends State<Levels> {
                           ),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
-                              print('wtcf');
                               levelModel
                                   .updateValue(levelModel.dataMap[i]["index"]);
                             },

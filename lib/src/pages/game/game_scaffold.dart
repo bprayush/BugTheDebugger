@@ -51,7 +51,7 @@ class _GameScaffoldState extends State<GameScaffold> {
                     ),
                   ] else ...[
                     Text(
-                      '>${Provider.of<LevelModel>(context).run()}',
+                      '>${Provider.of<LevelModel>(context).output}',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
