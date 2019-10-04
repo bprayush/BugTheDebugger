@@ -20,7 +20,7 @@ class AppRouter {
       case GameRoutes.LEVEL_ONE:
         return MaterialPageRoute(builder: (_) => Levels());
       default:
-        return MaterialPageRoute(builder: (_) => HomePage());
+        return MaterialPageRoute(builder: (_) => ComingSoon());
     }
   }
 }
