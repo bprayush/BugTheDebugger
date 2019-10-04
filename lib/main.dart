@@ -1,6 +1,6 @@
 import 'package:bug_the_debugger/service_locator.dart';
 import 'package:bug_the_debugger/src/assets/enums_and_constants/routes.dart';
-import 'package:bug_the_debugger/src/services/routes/route.dart';
+import 'package:bug_the_debugger/src/services/router/router.dart';
 import 'package:flutter/material.dart';
 
 void main() async {

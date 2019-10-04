@@ -11,10 +11,10 @@ class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     html.window.history.pushState(null, settings.name, '#' + settings.name);
     switch (settings.name) {
-      case AppRoutes.HOMEPAGE:
-        return MaterialPageRoute(builder: (_) => HomePage());
-      case AppRoutes.ABOUT:
-        return MaterialPageRoute(builder: (_) => AboutPage());
+      // case AppRoutes.HOMEPAGE:
+      //   return MaterialPageRoute(builder: (_) => HomePage());
+      // case AppRoutes.ABOUT:
+      //   return MaterialPageRoute(builder: (_) => AboutPage());
       case AppRoutes.COMING_SOON:
         return MaterialPageRoute(builder: (_) => ComingSoon());
       case GameRoutes.LEVEL_ONE:
