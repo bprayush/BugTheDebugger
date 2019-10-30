@@ -24,7 +24,8 @@ class _GameScaffoldState extends State<GameScaffold> {
       backgroundColor: Colors.black,
       body: Center(
         child: AnimatedContainer(
-          duration: Duration(milliseconds: 300),
+          duration: Duration(milliseconds: 800),
+          curve: Curves.easeIn,
           width: MediaQuery.of(context).size.width * 0.80,
           height: MediaQuery.of(context).size.height * 0.80,
           padding: EdgeInsets.all(10),
